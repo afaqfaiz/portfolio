@@ -9,26 +9,36 @@
     <title>Your Name | Professional Profile</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <!-- Navigation Bar -->
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <nav class="nav">
+        <div class="navbar-container">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contacts">Contact</a></li>
+            </ul>
 
-    <!-- Language Switcher -->
-    <div class="language-switcher">
-        <a href="#" lang="en">English</a> | 
-        <a href="#" lang="fr">Français</a> | 
-        <a href="#" lang="ar">العربية</a> | 
-        <a href="#" lang="ur">اردو</a>
+        </div>
+       
+    </nav>
+    <div class="language">
+        <button class="language-btn">
+            Select Language <span class="arrow">▼</span>
+        </button>
+        <ul class="language-list">
+            <li><a href="#" lang="en">English</a></li>
+            <li><a href="#" lang="fr">Français</a></li>
+            <li><a href="#" lang="ar">العربية</a></li>
+            <li><a href="#" lang="ur">اردو</a></li>
+        </ul>
     </div>
+    <script src="ronak.js"></script>
+   
 
     <!-- Hero Section -->
     <section id="home">
@@ -99,7 +109,7 @@
         </div>
     </section>
     <!-- Footer -->
-<footer>
+<footer id="contacts" class="contacts">
     <p>&copy; [Aafaq Ahmad] | 
         <a href="https://github.com/YourGitHubUsername" target="_blank">GitHub</a> | 
         <a href="https://www.linkedin.com/in/YourLinkedInUsername/" target="_blank">LinkedIn</a>

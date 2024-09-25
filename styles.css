@@ -1,0 +1,99 @@
+ /* Mobile-first CSS */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ body {
+    /*font-family: Arial, sans-serif;*/
+    font-family: 'Montserrat',sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+nav {
+    background-color: #333; 
+    width: 100%;
+    position: sticky;
+    top: 0; 
+    z-index: 1000; 
+    display: flex;
+}
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Evenly space out the nav items */
+    align-items: center;
+    padding: 10px 0;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0 0.5rem;
+}
+li{
+    margin-bottom: 0.5em;
+}
+.nav a:hover{
+    border-bottom: 0.01rem solid white;
+}
+
+/*language*/
+.language {
+    position: relative;
+    display: inline-block;
+}
+
+.language-btn {
+    background-color: #f1f1f1;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.arrow {
+    margin-left: 8px;
+}
+
+.language-list {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.language-list li {
+    padding: 12px 16px;
+}
+
+.language-list li a {
+    text-decoration: none;
+    display: block;
+    color: black;
+}
+
+.language-list li a:hover {
+    background-color: #ddd;
+}
+
+.language-btn.active + .language-list {
+    display: block;
+}
+
+
+/*###########SKILLS*/
+
+
+
