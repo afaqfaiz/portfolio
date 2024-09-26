@@ -264,3 +264,84 @@ li{
 .footer-contact p{
     font-size: medium;
 }
+
+
+
+/***********************media queries***********************/
+
+@media (max-width: 768px) 
+{
+    .navbar-container {
+        padding: 0 10px;
+    }
+    
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+    
+    nav a {
+        padding: 10px 0; /* Increase padding for better touch targets */
+        width: 100%; /* Make links take full width */
+        text-align: left; /* Align text to the left */
+    }
+
+    .skills-container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .skill-category {
+        width: 90%; 
+        margin-bottom: 1.5rem; /* space betwen  the 2  categories soft and hard */
+    }
+
+    .hero h1 {
+        font-size: 2rem; 
+    }
+
+    .hero p {
+        font-size: 1rem; 
+    }
+
+    #projects div, #education div {
+        padding: 1rem;
+    }
+
+    #footer .footer-container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .footer-container div {
+        margin: 0.5rem 0; 
+        padding: 0.5rem; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    body{
+        font-size: 75%;
+    }
+    .hero h1 {
+        font-size: 1.5rem; 
+    }
+
+    .hero p {
+        font-size: 0.9rem; 
+    }
+
+    .language-btn {
+        padding: 8px; 
+    }
+
+    .language-list li {
+        padding: 10px; 
+    }
+    
+    .footer-container {
+        font-size: 12px; 
+    }
+}
+

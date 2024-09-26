@@ -16,3 +16,4 @@ document.querySelectorAll('.language-list li a').forEach(function(languageOption
         document.querySelector('.language-btn').classList.remove('active');
     });
 });
+
