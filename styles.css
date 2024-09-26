@@ -49,7 +49,8 @@ li{
 .hamburger {
     display: none;
     position: absolute;
-    right: 20px;
+    right: 30px;
+    top: 25px;
     flex-direction: column;
     cursor: pointer;
     justify-content: space-between
@@ -339,13 +340,20 @@ li{
 
 @media (max-width: 768px) 
 {   
+    .nav a{
+        font-size: 1.3rem;
+    }
+    .language a,.language-btn{
+        font-size: 1.4rem;
+    }
+
     .skills h2, .projects h2, .education h2{
         font-size: 2rem;
     }
-    .skills h3, .projects h3, .education h3{
+    .skills h3, .projects h3, .education h3, #footer h3{
         font-size: 1.7rem;
     }
-    .skills p, #projects p, #education p{
+    .skills p, #projects p, #education p, #footer p{
         font-size: 1.5rem;
     }
     #skills{
@@ -400,6 +408,12 @@ li{
         aspect-ratio: 16/9;     
         border-radius: 10px;       
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    }
+    .footer-social a {
+        color: #fff;
+        font-size: 40px;
+        margin:0rem 1.3rem;
+        transition: color 0.3s;
     }
 }
 
