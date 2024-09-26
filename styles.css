@@ -28,7 +28,7 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center; /* Evenly space out the nav items */
+    justify-content: center; 
     align-items: center;
     padding: 10px 0;
 }
@@ -44,6 +44,49 @@ li{
     border-bottom: 0.01rem solid white;
 }
 
+/*********mobile nav bar************/
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: left;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+}
+
+/* Mobile Styling */
+@media (max-width: 500px) 
+{
+ 
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    li {
+        margin-bottom: 1em;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
 /*language*/
 .language {
     position: relative;
@@ -94,7 +137,7 @@ li{
 
 
 /*###########hero*/
-/* Hero Section */
+
 .hero {
     background-color: #cdd2d6;
    
@@ -207,7 +250,7 @@ li{
 }
 
 /**********footer*****/
-/* Footer Section */
+
 #footer {
     background-color: #555454;
     color: #fff;
@@ -271,21 +314,7 @@ li{
 
 @media (max-width: 768px) 
 {
-    .navbar-container {
-        padding: 0 10px;
-    }
-    
-    nav ul {
-        flex-direction: column; /* Stack navigation items vertically */
-        align-items: flex-start; /* Align items to the start */
-    }
-    
-    nav a {
-        padding: 10px 0; /* Increase padding for better touch targets */
-        width: 100%; /* Make links take full width */
-        text-align: left; /* Align text to the left */
-    }
-
+   
     .skills-container {
         flex-direction: column; 
         align-items: center; 
@@ -344,4 +373,5 @@ li{
         font-size: 12px; 
     }
 }
+
 

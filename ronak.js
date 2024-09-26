@@ -6,14 +6,23 @@ document.querySelector('.language-btn').addEventListener('click', function() {
 // Select a language and update button text
 document.querySelectorAll('.language-list li a').forEach(function(languageOption) {
     languageOption.addEventListener('click', function(e) {
-        e.preventDefault();  // Prevent the default link behavior
-        const selectedLanguage = this.textContent;  // Get the selected language text
-
-        // Update the button text to the selected language
+        e.preventDefault();  
+        const selectedLanguage = this.textContent;  
+       
         document.querySelector('.language-btn').innerHTML = selectedLanguage + ' <span class="arrow">▼</span>';
 
-        // Hide the language list
         document.querySelector('.language-btn').classList.remove('active');
     });
 });
 
+// func to control nav bar for moble/tab
+function toggleMenu() {
+    const navLinks = document.querySelector('.navbar-container ul'); 
+    navLinks.classList.toggle('show'); 
+}
+document.querySelectorAll('.navbar-container ul li a').forEach(link => {
+    link.addEventListener('click', function() {
+        const navLinks = document.querySelector('.navbar-container ul');
+        navLinks.classList.remove('show');
+    });
+});
