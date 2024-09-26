@@ -44,23 +44,29 @@ li{
     border-bottom: 0.01rem solid white;
 }
 
+
 /*********mobile nav bar************/
 .hamburger {
     display: none;
+    position: absolute;
+    right: 20px;
     flex-direction: column;
     cursor: pointer;
-    position: left;
+    justify-content: space-between
+    
 }
+
 
 .hamburger .bar {
     width: 25px;
     height: 3px;
-    background-color: white;
+    background-color: rgba(84, 81, 81, 0.724);
     margin: 4px 0;
     transition: all 0.3s ease;
+    border-radius: 10px
 }
 
-/* Mobile Styling */
+
 @media (max-width: 500px) 
 {
  
@@ -85,6 +91,7 @@ li{
 
     .hamburger {
         display: flex;
+    
     }
 }
 /*language*/
@@ -308,31 +315,64 @@ li{
     font-size: medium;
 }
 
+/****************video content********************/
+/* Center the video container */
+.video-container {
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    height: 100vh;            
+    background-color: #f5f5f5; 
+}
+
+/* Styling for the YouTube video iframe */
+.youtube-video {
+    width: 70%;               
+    max-width: 800px;         
+    aspect-ratio: 16/9;       
+    border-radius: 10px;       
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
 
 
 /***********************media queries***********************/
 
 @media (max-width: 768px) 
-{
-   
+{   
+    .skills h2, .projects h2, .education h2{
+        font-size: 2rem;
+    }
+    .skills h3, .projects h3, .education h3{
+        font-size: 1.7rem;
+    }
+    .skills p, #projects p, #education p{
+        font-size: 1.5rem;
+    }
+    #skills{
+        padding: 15px;
+       
+    }
     .skills-container {
         flex-direction: column; 
         align-items: center; 
     }
 
     .skill-category {
-        width: 90%; 
+        width: 100%; 
         margin-bottom: 1.5rem; /* space betwen  the 2  categories soft and hard */
     }
 
     .hero h1 {
-        font-size: 2rem; 
+        font-size: 2.3rem; 
     }
 
     .hero p {
-        font-size: 1rem; 
+        font-size: 1.5rem; 
     }
-
+/*projects */
+    #projects ,#education{
+        padding: 20px;
+    }
     #projects div, #education div {
         padding: 1rem;
     }
@@ -346,9 +386,25 @@ li{
         margin: 0.5rem 0; 
         padding: 0.5rem; 
     }
+    .video-container {
+        display: flex;
+        justify-content: center;  
+        align-items: center;      
+        height: 40vh;            
+        background-color: #f5f5f5; 
+    }
+    .youtube-video {
+        width: 90%;               
+        max-width: 800px;
+        height: auto;         
+        aspect-ratio: 16/9;     
+        border-radius: 10px;       
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    }
 }
 
 
+/*
 @media (max-width: 480px) {
     body{
         font-size: 75%;
@@ -375,3 +431,4 @@ li{
 }
 
 
+*/
