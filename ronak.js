@@ -26,3 +26,23 @@ document.querySelectorAll('.navbar-container ul li a').forEach(link => {
         navLinks.classList.remove('show');
     });
 });
+
+
+
+//change name language
+document.addEventListener("DOMContentLoaded", function () {
+    const languageList = document.getElementById("languageList");
+    const nameDisplay = document.getElementById("name");
+
+    languageList.addEventListener("click", function (event) {
+        const lang = event.target.getAttribute("lang");
+        
+        if (lang === "ur") {
+            nameDisplay.textContent = "آفاق احمد";
+        } else if (lang === "ar") {
+            nameDisplay.textContent = "آفاق احمد";
+        } else {
+            nameDisplay.textContent = "Aafaq Ahmad"; 
+        }
+    });
+});
