@@ -26,7 +26,7 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
-                
+
                 <li><a href="#education">Education</a></li>
                 <li><a href="#footer">Contact</a></li>
             </ul>
@@ -54,8 +54,8 @@
     <section id="home">
         <div class="hero" style="text-align: center; padding: 2rem;">
             <img src="./images/profile_img.jpg" alt="Aafaq Ahmad Profile Photo" style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover;">
-            <h1 id="name">Aafaq Ahmad</h1>
-            <p>Web Developer | Designer | Programmer</p>
+            <h1 id="name"></h1>
+            <p></p>
         </div>
     </section>
 
@@ -65,20 +65,11 @@
         <div class="skills-container">
             <div class="skill-category">
                 <h3>Hard Skills</h3>
-                <p>I have a strong skill set that includes front-end technologies like HTML, CSS, and JavaScript, 
-                    along with backend development using Python, C, and C++.
-                     I am also proficient in version control using Git and 
-                     have experience working with SQL, databases, and network programming,
-                      allowing me to develop and manage robust applications efficiently.</p>
+                <p id="hard"></p>
             </div>
             <div class="skill-category">
                 <h3>Soft Skills</h3>
-                <p>I possess strong soft skills that are essential for both personal and professional success.
-                     These include effective team collaboration, clear communication, and excellent time management. 
-                     Additionally, I excel in problem-solving, adaptability, leadership, and critical thinking,
-                      which allow me to navigate complex challenges, work efficiently under pressure,
-                       and contribute positively in dynamic environments. My ability to resolve conflicts and maintain 
-                       a positive attitude further enhances my professional relationships and productivity.</p>
+                <p class="soft"></p>
             </div>
         </div>
     </section>
@@ -86,43 +77,32 @@
     <section id="projects" class="projects">
         <h2>Projects</h2>
         <div>
-            <h3>Chess Game</h3>
-            <p>I developed a fully functional chess game using C++ as a console-based project.
-                 The entire code was written from scratch, implementing the core mechanics of chess, 
-                 including piece movement, rules, and game flow. This project helped me deepen my understanding of
-                  object-oriented programming, algorithmic thinking, and game logic.</p>
+            <h3 class="chess"></h3>
+            <p class="chess-desc"></p>
         </div>
         <div>
-            <h3>Client-Server Program</h3>
-            <p>I created a console-based client-server program in C, where the client sends encrypted data to the server.
-                 The server securely stores the data without decrypting it. I also implemented a mechanism to download
-                  and decrypt the stored data, allowing for secure data transmission and retrieval. This project strengthened 
-                my understanding of network programming, encryption techniques, and secure data handling.</p>
+            <h3 class="client"></h3>
+            <p class="client-desc"></p>
         </div>
     </section>
     <!--Education Section-->
     <section id="education" class="education">
         <h2>Education & Short Courses</h2>
-        <div>
+        <div id="degree">
             <h3>Degree Program</h3>
-            <p>Bachelor's in Computer Science</p>
-            <p>University: Information Technology University</p>
-            <p>Date: 2022 - 2026</p>
+            <p class="deg-name"></p>
+            <p class="uni-name"></p>
+            <p class="deg-date"></p>
         </div>
 
-        <div>
-            <h3>Front-End Web Development and Designing</h3>
-            <p>I completed a short course in Front-End Web Development and Designing, 
-                where I gained a solid understanding of HTML, CSS, and JavaScript to build 
-                responsive and visually appealing websites. The course also covered web design principles, 
-                mobile-first development, and user interface design, helping me enhance both the 
-                functionality and aesthetics of web projects.</p>
+        <div id="course">
+            <h3 class="cour-name"></h3>
+            <p class="cour-detail"></p>
         </div>
     </section>
     <section class="vid">
         <div class="video-container">
             <iframe class="youtube-video" 
-                src="https://www.youtube.com/embed/ftWNrjHWKS0" 
                 frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; 
                 encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
@@ -135,13 +115,13 @@
     <div class="footer-container">
         <div class="footer-social">
             <h3>Follow Me</h3>
-            <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/afaqfaiz" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a id="linkedin" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a id="github" target="_blank"><i class="fa-brands fa-github"></i></a>
         </div>
         <div class="footer-contact">
             <h3>Contact Me</h3>
-            <p>Email: bsc22080@itu.edu.pk</p>
-            <p>Phone: -------</p>
+            <p class="email"></p>
+            <p class="phone"></p>
         </div>
     </div>
     <div class="footer-bottom">

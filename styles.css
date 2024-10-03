@@ -1,4 +1,8 @@
  /* Mobile-first CSS */
+ html {
+    scroll-padding-top: 40px; /* Adjust based on your navbar height */
+}
+
  * {
     margin: 0;
     padding: 0;
@@ -46,31 +50,33 @@ li{
 
 
 /*********mobile nav bar************/
-.hamburger {
-    display: none;
-    position: absolute;
-    right: 30px;
-    top: 25px;
-    flex-direction: column;
-    cursor: pointer;
-    justify-content: space-between
-    
-}
 
-
-.hamburger .bar {
-    width: 40px;
-    height: 7px;
-    background-color: rgba(84, 81, 81, 0.724);
-    margin: 5.5px 0;
-    transition: all 0.3s ease;
-    border-radius: 10px
-}
 
 
 @media (max-width: 768px) 
 {
  
+    .hamburger {
+        display: none;
+        position: absolute;
+        right: 30px;
+        top: 25px;
+        flex-direction: column;
+        cursor: pointer;
+        justify-content: space-between
+        
+    }
+    
+    
+    .hamburger .bar {
+        width: 40px;
+        height: 7px;
+        background-color: rgba(84, 81, 81, 0.724);
+        margin: 5.5px 0;
+        transition: all 0.3s ease;
+        border-radius: 10px
+    }
+    
     nav ul {
         display: none;
         flex-direction: column;
@@ -150,6 +156,7 @@ li{
     background-color: #cdd2d6;
    
     padding: 3rem 0 ;
+    margin-bottom: 10px;
 }
 
 .hero h1 {
@@ -171,7 +178,7 @@ li{
 
 #skills {
     background-color: #f9f9f9;
-    padding: 3rem;
+    padding: 1.5rem;
     text-align: center;
 }
 
@@ -201,7 +208,7 @@ li{
 /**************projecs************/
 #projects {
     background-color: #fff;
-    padding: 3rem;
+    padding: 1rem 2rem;
 }
 
 #projects h2 {
@@ -231,7 +238,7 @@ li{
 /**********education***********/
 #education {
     background-color: #fff;
-    padding: 3rem;
+    padding: 1em 1.5rem 0em 1.5em;
 }
 
 #education h2 {
